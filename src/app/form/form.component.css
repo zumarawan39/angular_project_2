@@ -1,0 +1,70 @@
+/* styles.css */
+
+.main {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .styled-form {
+    background: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .styled-input {
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* .styled-input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+   */
+  .styled-button {
+    display: block;
+    width: calc(100% - 30px);
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .styled-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .styled-button:active {
+    background-color: #00408d;
+    transform: scale(0.98);
+  }
+  .form_shadow{
+    box-shadow: 5px 5px  10px black;
+  }
+input.ng-invalid.ng-touched {
+    border: 2px solid red;
+  }
+  span{
+    color: red;
+    font-weight: bolder;
+  }

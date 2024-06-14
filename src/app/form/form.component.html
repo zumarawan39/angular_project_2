@@ -1,0 +1,28 @@
+
+<div class="main">
+    <form class="styled-form" (ngSubmit)="okValu(submitForm)" #submitForm="ngForm" [ngClass]="{'form_shadow': submitForm.touched}">
+      <h1>Enter Your Info</h1>
+      <input type="text" class="styled-input" name="fname" placeholder="Enter Your Name" [(ngModel)]="fname" required>
+      <span *ngIf="submitForm.controls['fname']?.invalid && submitForm.controls['fname']?.touched">*First Enter Your Name</span>
+  
+      <input type="text" class="styled-input" name="lname" placeholder="Enter Your Last Name" [(ngModel)]="lname" required>
+      <span *ngIf="submitForm.controls['lname']?.invalid && submitForm.controls['lname']?.touched">*First Enter Your Last Name</span>
+  
+      <input type="email" class="styled-input" name="email" placeholder="Enter Your Email" [(ngModel)]="email" required email>
+      <span *ngIf="submitForm.controls['email']?.invalid && submitForm.controls['email']?.touched">*First Enter Your Email</span>
+  
+      <input type="number" class="styled-input" name="number" placeholder="Enter Your Number" [(ngModel)]="number" required>
+      <span *ngIf="submitForm.controls['number']?.invalid && submitForm.controls['number']?.touched">*First Enter Your Number</span>
+  
+      <button class="styled-button" type="submit" [disabled]="!submitForm.valid">Submit</button>
+    </form>
+  
+    <div class="display-info">
+      <h2>Your Entered Information:</h2>
+      <p><strong>First Name:</strong> {{ fname }}</p>
+      <p><strong>Last Name:</strong> {{ lname }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Number:</strong> {{ number }}</p>
+    </div>
+  </div>
+  
